@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="HTML&amp;amp;CSS:对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 &amp;amp; 存储、Histoy,多媒体、WebGL\SVG\Canvas);JavaScript：数据类">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-09T13:48:50.355Z">
+<meta property="og:updated_time" content="2018-11-09T14:37:46.863Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Interview summary">
 <meta name="twitter:description" content="HTML&amp;amp;CSS:对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 &amp;amp; 存储、Histoy,多媒体、WebGL\SVG\Canvas);JavaScript：数据类">
@@ -320,8 +320,7 @@
       
 
       
-        <p>HTML&amp;CSS:<br>对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 &amp; 存储、Histoy,多媒体、WebGL\SVG\Canvas);<br>JavaScript：<br>数据类型、运算、对象、Function、继承、闭包、作用域、事件、Prototype、RegExp、JSON、Ajax、DOM、BOM、<br>内存泄漏、跨域、异步请求、模板引擎、模块化、Flux、同构、算法、ECMAScript6、Nodejs、HTTP;<br>html<br>行内元素、块内元素、空元素，各有哪些以及区别？<br>首先，css规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</p>
-<p>(1)行内元素：<a>、<b>、<span>、<q>、<strong>、<em>、<lable>、<i>、<var>、<del>等<br>(2)块内元素：<div>、<p>、<ul>、<ol>、<li>、<dt>、<dd>、<h1>…<h6>、<table>、<form>等;<br>(3)空元素：<br>、<hr>、<img>、<input>、<link>、<meta>等;</form></table></h6></h1></dd></dt></li></ol></ul></p>
+        <p>HTML&amp;CSS:<br>对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 &amp; 存储、Histoy,多媒体、WebGL\SVG\Canvas);<br>JavaScript：<br>数据类型、运算、对象、Function、继承、闭包、作用域、事件、Prototype、RegExp、JSON、Ajax、DOM、BOM、<br>内存泄漏、跨域、异步请求、模板引擎、模块化、Flux、同构、算法、ECMAScript6、Nodejs、HTTP;<br>html<br>行内元素、块内元素、空元素，各有哪些以及区别？<br>首先，css规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br><a id="more"></a><br>(1)行内元素：<a>、<b>、<span>、<q>、<strong>、<em>、<lable>、<i>、<var>、<del>等<br>(2)块内元素：<div>、<p>、<ul>、<ol>、<li>、<dt>、<dd>、<h1>…<h6>、<table>、<form>等;<br>(3)空元素：<br>、<hr>、<img>、<input>、<link>、<meta>等;</form></table></h6></h1></dd></dt></li></ol></ul></p>
 <p>行内元素与块内元素的区别：</p>
 <p>直观上看：行内元素水平排列，块级元素垂直方向排列，且一个块级元素占据一整行；<br>块级元素可以包含行内元素和块级元素，行内元素不能包含块级元素，只能包含行内元素；<br>行内元素与块级元素属性的不同，主要是盒模型属性上：行内元素设置width无效，height无效(可以设置line-height)，margin上下无效，padding上下无效；<br>介绍一下你对浏览器内核的理解？<br>主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。<br>渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。</p>
 <p>JS引擎：解析和执行javascript来实现网页的动态效果。</p>
