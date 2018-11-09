@@ -268,7 +268,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/09/New-Beginning/" itemprop="url">New Beginning</a></h1>
+                <a class="post-title-link" href="/2018/11/09/New-Beginning/" itemprop="url">Interview summary</a></h1>
         
 
         <div class="post-meta">
@@ -320,8 +320,65 @@
       
         
           
-            <p>This is a test.HAHAHAHA</p>
+            <p>HTML&amp;CSS:<br>对Web标准的理解（结构、表现、行为）、浏览器内核、渲染原理、依赖管理、兼容性、CSS语法、层次关系，常用属性、布局、选择器、权重、盒模型、Hack、CSS预处理器、CSS3、Flexbox、CSS Modules、Document flow、BFC、HTML5（离线 &amp; 存储、Histoy,多媒体、WebGL\SVG\Canvas);<br>JavaScript：<br>数据类型、运算、对象、Function、继承、闭包、作用域、事件、Prototype、RegExp、JSON、Ajax、DOM、BOM、<br>内存泄漏、跨域、异步请求、模板引擎、模块化、Flux、同构、算法、ECMAScript6、Nodejs、HTTP;<br>html<br>行内元素、块内元素、空元素，各有哪些以及区别？<br>首先，css规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</p>
+<p>(1)行内元素：<a>、<b>、<span>、<q>、<strong>、<em>、<lable>、<i>、<var>、<del>等<br>(2)块内元素：<div>、<p>、<ul>、<ol>、<li>、<dt>、<dd>、<h1>…<h6>、<table>、<form>等;<br>(3)空元素：<br>、<hr>、<img>、<input>、<link>、<meta>等;</form></table></h6></h1></dd></dt></li></ol></ul></p>
+<p>行内元素与块内元素的区别：</p>
+<p>直观上看：行内元素水平排列，块级元素垂直方向排列，且一个块级元素占据一整行；<br>块级元素可以包含行内元素和块级元素，行内元素不能包含块级元素，只能包含行内元素；<br>行内元素与块级元素属性的不同，主要是盒模型属性上：行内元素设置width无效，height无效(可以设置line-height)，margin上下无效，padding上下无效；<br>介绍一下你对浏览器内核的理解？<br>主要分成两部分：渲染引擎(layout engineer或Rendering Engine)和JS引擎。<br>渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。</p>
+<p>JS引擎：解析和执行javascript来实现网页的动态效果。</p>
+<p>最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。<br>常见的浏览器内核有哪些？</p>
+<p>rident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等<br>Presto内核：Opera7及以上。[Opera内核原为：Presto，现为：Blink;]<br>Webkit内核：Safari,Chrome等。 [ Chrome的：Blink（WebKit的分支）]<br>html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分 HTML 和 HTML5？</p>
+<p>HTML5 现在已经不是 SGML 的子集，主要是关于图像，位置，存储，多任务等功能的增加。</p>
+<p>绘画 canvas;</p>
+<p>用于媒介回放的 video 和 audio 元素;</p>
+<p>本地离线存储 localStorage 长期存储数据，浏览器关闭后数据不丢失;sessionStorage 的数据在浏览器关闭后自动删除;</p>
+<p>语意化更好的内容元素，比如 article、footer、header、nav、section;</p>
+<p>表单控件，calendar、date、time、email、url、search;</p>
+<p>新的技术webworker, websocket, Geolocation;</p>
+<p>移除的元素：</p>
+<p>纯表现的元素：basefont，big，center，font, s，strike，tt，u;<br>对可用性产生负面影响的元素：frame，frameset，noframes；<br>支持HTML5新标签：</p>
+<p>IE8/IE7/IE6支持通过document.createElement方法产生的标签，</p>
+<p>可以利用这一特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式。</p>
+<p>简述一下你对HTML语义化的理解？</p>
+<p>用正确的标签做正确的事情。<br>html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析;<br>即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;<br>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;<br>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。<br>请描述一下 cookies，sessionStorage 和 localStorage 的区别？<br>cookie 是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。</p>
+<p>cookie 数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。</p>
+<p>sessionStorage和localStorage 不会自动把数据发给服务器，仅在本地保存。</p>
+<p>存储大小：<br>cookie数据大小不能超过4k。<br>sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。</p>
+<p>有期时间：<br>localStorage 存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；<br>sessionStorage 数据在当前浏览器窗口关闭后自动删除。<br>cookie 设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭<br>Label的作用是什么？是怎么用的？<br>label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。</p>
+<p><label for="Name">Number:</label></p>
+<input type="“text“name=" name""="" id="Name">
 
+<p><label>Date:<input type="text" name="B"></label><br>css<br>介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？</p>
+<p>IE盒子模型：width = border+padding+content<br>标准盒模型：width = content<br>CSS选择符有哪些？哪些属性可以继承？</p>
+<p>1.id选择器（ # myid）<br>2.类选择器（.myclassname）<br>3.标签选择器（div, h1, p）<br>4.相邻选择器（h1 + p）<br>5.子选择器（ul &gt; li）<br>6.后代选择器（li a）<br>7.通配符选择器（ * ）<br>8.属性选择器（a[rel = “external”]）<br>9.伪类选择器（a:hover, li:nth-child）</p>
+<p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+<p>不可继承的样式：border padding margin width height ;<br>CSS优先级算法如何计算？</p>
+<p>此处后期补充<br>优先级就近原则，同权重情况下样式定义最近者为准;<br>载入样式以最后载入的定位为准;</p>
+<p>优先级为:<br>同权重: 内联样式表（标签内部）&gt; 嵌入样式表（当前文件中）&gt; 外部样式表（外部文件中）。<br>!important &gt; id &gt; class &gt; tag<br>important 比 内联优先级高<br>javascript<br>介绍js的基本数据类型。<br>Undefined、Null、Boolean、Number、String、</p>
+<p>ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )</p>
+<p>介绍js有哪些内置对象？<br>Object 是 JavaScript 中所有对象的父对象</p>
+<p>数据封装类对象：Object、Array、Boolean、Number 和 String<br>其他对象：Function、Arguments、Math、Date、RegExp、Error<br>JavaScript原型，原型链 ? 有什么特点？</p>
+<p>JavaScript有几种类型的值？，你能画一下他们的内存图吗？</p>
+<p>Javascript如何实现继承？</p>
+<p>Javascript作用链域?</p>
+<p>谈谈This对象的理解?</p>
+<p>this总是指向函数的直接调用者（而非间接调用者）；<br>如果有new关键字，this指向new出来的那个对象；<br>在事件中，this指向触发这个事件的对象，特殊的是，IE中的attachEvent中的this总是指向全局对象Window；<br>具体参考：《 轻松搞定javascript中this指向 》</p>
+<p>bind、call、apply的区别及实现。<br>具体参考：《 bind、call、apply的区别与实现原理 》</p>
+<p>什么是闭包（closure），为什么要用它？</p>
+<p>如何解决跨域问题？</p>
+<p>vue<br>其他<br>一个页面从输入URL到页面加载显示完成，这个过程中都发生了什么？</p>
+<p>简洁版：</p>
+<p>浏览器根据请求的URL交给DNS域名解析，找到真实IP，向服务器发起请求；<br>服务器交给后台处理完成后返回数据，浏览器接收文件（HTML,JS,CSS,图像等）;<br>浏览器对加载到的资源（HTML,JS,CSS等）进行语法解析，建立相应的内部数据结构（如HTML的DOM）；<br>载入解析到的资源文件，渲染页面，完成。<br>详细版：</p>
+<p>浏览器会开启一个线程来处理这个请求，对URL分析判断如果是http协议就按照web方式来处理；<br>调用浏览器内核中的对应方法，比如WebView中的loadUrl方法；<br>通过DNS解析获取网址的IP地址，设置UA等信息发出第二个GET请求；<br>进行HTTP协议会话，客户端发送报头（请求报头）；<br>进入到Web服务器上的Web Server，如Apache，Tomcat，Nodejs等服务器；<br>进入部署好的后端应用，如PHP，Java，JavaScript，Python等，找到对应的请求处理；<br>处理结束回馈报头，此处如果浏览器访问过，缓存上有对应资源，会与服务器最后修改时间对比，一致则返回304；<br>浏览器开始下载html文档（响应报头，状态吗200），同时使用缓存；<br>9.文档树建立，根据标记请求所需制定MIME类型的文件（比如CSS，JS），同时设置了Cookie；<br>页面开始渲染DOM，JS根据DOM API操作DOM，执行事件绑定等，页面显示完成。<br>http状态码有那些？分别代表是什么意思？<br>简单版：<br>100 Continue 继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息<br>200 OK 正常返回信息<br>201 Created 请求成功并且服务器创建了新的资源<br>202 Accepted 服务器已接受请求，但尚未处理<br>301 Moved Permanently 请求的网页已永久移动到新位置。<br>302 Found 临时性重定向。<br>303 See Other 临时性重定向，且总是使用 GET 请求新的 URI。<br>304 Not Modified 自从上次请求后，请求的网页未修改过。</p>
+<p>400 Bad Request  服务器无法理解请求的格式，客户端不应当尝试再次使用相同的内容发起请求。<br>401 Unauthorized 请求未授权。<br>403 Forbidden   禁止访问。<br>404 Not Found   找不到如何与 URI 相匹配的资源。</p>
+<p>500 Internal Server Error  最常见的服务器端错误。<br>503 Service Unavailable 服务器端暂时无法处理请求（可能是过载或维护）。<br>完整版：<br>1**(信息类)：表示接收到请求并且继续处理<br>100——客户必须继续发出请求<br>101——客户要求服务器根据请求转换HTTP协议版本</p>
+<p>2**(响应成功)：表示动作被成功接收、理解和接受<br>    200——表明该请求被成功地完成，所请求的资源发送回客户端<br>    201——提示知道新文件的URL<br>    202——接受和处理、但处理未完成<br>    203——返回信息不确定或不完整<br>    204——请求收到，但返回信息为空<br>    205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件<br>    206——服务器已经完成了部分用户的GET请求</p>
+<p>3**(重定向类)：为了完成指定的动作，必须接受进一步处理<br>    300——请求的资源可在多处得到<br>    301——本网页被永久性转移到另一个URL<br>    302——请求的网页被转移到一个新的地址，但客户访问仍继续通过原始URL地址，重定向，新的URL会在response中的Location中返回，浏览器将会使用新的URL发出新的Request。<br>    303——建议客户访问其他URL或访问方式<br>    304——自从上次请求后，请求的网页未修改过，服务器返回此响应时，不会返回网页内容，代表上次的文档已经被缓存了，还可以继续使用<br>    305——请求的资源必须从服务器指定的地址得到<br>    306——前一版本HTTP中使用的代码，现行版本中不再使用<br>    307——申明请求的资源临时性删除</p>
+<p>4**(客户端错误类)：请求包含错误语法或不能正确执行<br>    400——客户端请求有语法错误，不能被服务器所理解<br>    401——请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用<br>        HTTP 401.1 - 未授权：登录失败<br>        HTTP 401.2 - 未授权：服务器配置问题导致登录失败<br>        HTTP 401.3 - ACL 禁止访问资源<br>        HTTP 401.4 - 未授权：授权被筛选器拒绝<br>        HTTP 401.5 - 未授权：ISAPI 或 CGI 授权失败<br>    402——保留有效ChargeTo头响应<br>    403——禁止访问，服务器收到请求，但是拒绝提供服务<br>        HTTP 403.1 禁止访问：禁止可执行访问<br>        HTTP 403.2 - 禁止访问：禁止读访问<br>        HTTP 403.3 - 禁止访问：禁止写访问<br>        HTTP 403.4 - 禁止访问：要求 SSL<br>        HTTP 403.5 - 禁止访问：要求 SSL 128<br>        HTTP 403.6 - 禁止访问：IP 地址被拒绝<br>        HTTP 403.7 - 禁止访问：要求客户证书<br>        HTTP 403.8 - 禁止访问：禁止站点访问<br>        HTTP 403.9 - 禁止访问：连接的用户过多<br>        HTTP 403.10 - 禁止访问：配置无效<br>        HTTP 403.11 - 禁止访问：密码更改<br>        HTTP 403.12 - 禁止访问：映射器拒绝访问<br>        HTTP 403.13 - 禁止访问：客户证书已被吊销<br>        HTTP 403.15 - 禁止访问：客户访问许可过多<br>        HTTP 403.16 - 禁止访问：客户证书不可信或者无效<br>        HTTP 403.17 - 禁止访问：客户证书已经到期或者尚未生效<br>    404——一个404错误表明可连接服务器，但服务器无法取得所请求的网页，请求资源不存在。eg：输入了错误的URL<br>    405——用户在Request-Line字段定义的方法不允许<br>    406——根据用户发送的Accept拖，请求资源不可访问<br>    407——类似401，用户必须首先在代理服务器上得到授权<br>    408——客户端没有在用户指定的饿时间内完成请求<br>    409——对当前资源状态，请求不能完成<br>    410——服务器上不再有此资源且无进一步的参考地址<br>    411——服务器拒绝用户定义的Content-Length属性请求<br>    412——一个或多个请求头字段在当前请求中错误<br>    413——请求的资源大于服务器允许的大小<br>    414——请求的资源URL长于服务器允许的长度<br>    415——请求资源不支持请求项目格式<br>    416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段<br>    417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求长。</p>
+<p>5**(服务端错误类)：服务器不能正确执行一个正确的请求<br>    HTTP 500 - 服务器遇到错误，无法完成请求<br>        HTTP 500.100 - 内部服务器错误 - ASP 错误<br>        HTTP 500-11 服务器关闭<br>        HTTP 500-12 应用程序重新启动<br>        HTTP 500-13 - 服务器太忙<br>        HTTP 500-14 - 应用程序无效<br>        HTTP 500-15 - 不允许请求 global.asa<br>    Error 501 - 未实现<br>    HTTP 502 - 网关错误<br>    HTTP 503：由于超载或停机维护，服务器目前无法使用，一段时间后可能恢复正常<br>对前端工程师这个职位是怎么样理解的？它的前景会怎么样？</p>
+<p>前端是最贴近用户的程序员，比后端、数据库、产品经理、运营、安全都近。</p>
+<p>实现界面交互；<br>提升用户体验；<br>有个Nodejs后，前端可以实现服务端的一些事情。</p>
+<p>前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好，参与项目，快速高质量完成实现效果图，精确到1px；与团队成员，UI设计，产品经理的沟通；做好的页面结构，页面重构和用户体验；处理hack，兼容、写出优美的代码格式；针对服务器的优化、拥抱最新前端技术。</p>
+</div></del></var></i></lable></em></strong></q></span></b></a></p>
           
         
       
